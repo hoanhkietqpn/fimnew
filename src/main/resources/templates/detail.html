@@ -1,0 +1,155 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+
+<div th:fragment="header">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav " id="top">
+			<li class="nav-item active"><a class="nav-link" href="/">Home
+					
+			</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+			<li class="nav-item dropdown"><a
+				class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+				role="button" data-toggle="dropdown" aria-haspopup="true"
+				aria-expanded="false"> Dropdown </a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">Action</a> <a
+						class="dropdown-item" href="#">Another action</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div></li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search"
+				placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	</div>
+</nav>
+</div>
+
+<div class="container" id="main">
+  <div class="row">
+    <div class="col-sm-8">
+     <div class="row">
+	    <div class="col-sm-6">
+		    <div id="movie-1-img">
+		      	<img class="img-thumbnail" src="http://image.phimmoi.net/film/8161/poster.medium.jpg">
+		      	<ul style="padding-top: 5px; padding-left: 10px">
+			      <li class="btn btn-success">Download</li>
+			      <li class="btn btn-primary">Tralier</li>
+			      <li class="btn btn-danger">Xem phim</li>
+			    </ul>
+		      </div>
+	    </div>
+	    <div class="col-sm-6">
+	    	<h5><span><a href="" id="title-1-movie">ALADDIN VÀ CÂY ĐÈN THẦN</a></span></h5>
+	    	<span id="title-2-movie">Aladdin (Live-action) (2019)</span>
+	    	<div class="scroll">
+	    		<span class="movie-dt">Trạng thái:</span>
+	    			<span class="movie-dd">Hoàn tất </span>
+	    			<br>
+	    			<span class="movie-dt">Điểm IMDb:</span>
+	    			<span class="movie-dd">7.4</span>
+	    			<br>
+	    			<span class="movie-dt">Số người đánh giá:</span>
+	    			<span class="movie-dd">(35,166 votes)</span>
+	    			<br>
+	    			<span class="movie-dt">Đạo diễn:</span>
+	    			<span class="movie-dd">Guy Ritchie</span>
+	    			<br>
+	    			<span class="movie-dt">Quốc gia:</span>
+	    			<span class="movie-dd">Mỹ</span>
+	    			<br>
+	    			<span class="movie-dt">Năm:</span>
+	    			<span class="movie-dd"><span>2019</span></span>
+	    			<br>
+	    			<span class="movie-dt">Ngày ra rạp:</span>
+	    			<span class="movie-dd">22/5/2019</span>
+	    			<br>
+	    			<span class="movie-dt">Thời lượng:</span>
+	    			<span class="movie-dd">128 phút</span>
+	    			<br>
+	    			<span class="movie-dt">Chất lượng:</span>
+	    			<span class="movie-dd">Bản đẹp</span>
+	    			<br>
+	    			<span class="movie-dt">Độ phân giải:</span>
+	    			<span class="movie-dd">HD 720p</span>
+	    			<br>
+	    			<span class="movie-dt">Ngôn ngữ:</span>
+	    			<span class="movie-dd">Phụ đề việt + Thuyết minh</span>
+	    			<br>
+	    			<span class="movie-dt">Thể loại:</span>
+	    			<span class="movie-dd">
+	    			<span>Phim viễn tưởng</span>, 
+	    			<span>Phim phiêu lưu</span>, 
+	    			<span>Phim hài hước</span></span>
+	    			<br>
+	    			<span class="movie-dt">Công ty SX:</span>
+	    			<span class="movie-dd">Walt Disney Pictures, Lin Pictures, Rideback</span>
+	    	</div>
+	    </div>
+      </div>
+      <div class="movie-content">
+      <span class="title-content">NỘI DUNG PHIM</span><br>
+      <span class="content">Aladdin 2019 là một phiên bản live action đầy màu sắc sống động và không kém phần hồi hộp, 
+      được chuyển thể từ bộ phim hoạt hình kinh điển cả hãng phim Disney. Câu chuyện xoay quanh chàng hoàng tử khu ổ 
+      chuột Aladdin – một thanh niên trẻ tuổi dũng cảm và nàng công chúa Jasmine mạnh mẽ, đương nhiên phải kể đến 
+      thần đèn Genie – người nắm giữ chìa khóa thay đổi tương lại sau này của họ.</span>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
